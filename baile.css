@@ -1,0 +1,167 @@
+
+.fundo{
+	margin:0;
+	padding:0;
+	display:flex;
+	
+	background-color:#000000;
+}
+	.fundoc
+	{
+	position:absolute; /*define posição absoluta */
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%); /* alinha a posição absolute */
+	width:400px; /*largura*/
+	height:500px; /*Altura */ 
+	border:3px solid #96002B;/* borda do retangulo*/
+	box-shadow:0px 0px 5px 1px #333;  /* sombra */
+	background-color:#000000;
+	text-align:center;
+	color: white;
+	transition:all 0.3s ease-in-out;  /* efeito de transição no elemento*/
+}
+#cuck:hover{  /* efeito neon */
+	
+	box-shadow:0 0 20px #FF0049, inset 0 0 20px #FF0049;  /* inset bota o efeito por fora também */
+	
+}
+
+
+/* fonte externa */
+@font-face { 
+  font-family: gibson;
+  src: url('Funk Gibson.ttf');
+}
+h1{
+	padding:0;
+	font-family:gibson;
+	color:#111;
+	font-size:35px;
+	letter-spacing:0.2px;
+	
+}
+h1 span{
+	text-align:center;
+	display:table-cell;
+	margin:12px;
+	padding:7px;
+	animation:animate 2s linear infinite;
+	
+	
+}
+/* aqui define as velocidades da animação, de cada letra em especifico */
+h1 span:nth-child(1)
+{
+	animation-delay: 0s;
+}
+h1 span:nth-child(2)
+{
+	animation-delay: 0.25s;
+}
+h1 span:nth-child(3)
+{
+	animation-delay: 0.5s;
+}
+h1 span:nth-child(4)
+{
+	animation-delay: 0.75s;
+}
+h1 span:nth-child(5)
+{
+	animation-delay: 1s;
+}
+h1 span:nth-child(6)
+{
+	animation-delay: 1.25s;
+}h1 span:nth-child(7)
+{
+	animation-delay: 1.5s;
+}
+h1 span:nth-child(8)
+{
+	animation-delay: 1.75s;
+}
+h1 span:nth-child(9)
+{
+	animation-delay: 1.90s;
+}
+h1 span:nth-child(10)
+{
+	animation-delay: 2.0s;
+}
+h1 span:nth-child(11)
+{
+	animation-delay: 2.2s;
+}
+/* a animação em si, usando keyframes animate, para o efeito gradual de transição */
+@keyframes animate 
+{	
+
+	0%,100%
+	{
+		color:#fff;
+		filter:Blur(2px);
+	
+	}
+	0%,100%
+	{
+		color:#09BBAD; /* BLUR EXTERNO  */ 
+		filter:Blur(2px);
+		text-shadow:0 0 10px #00b3ff,
+					0 0 20px #00b3ff,
+					0 0 40px #00b3ff,
+					0 0 80px #00b3ff,
+					0 0 200px #00b3ff,
+					0 0 300px #00b3ff,
+					0 0 400px #00b3ff;
+		
+	}
+	5%,95%
+	{
+		color:#605E5D; /* BLUR INTERNO*/
+		filter:Blur(0px);
+		text-shadow:none;
+	}
+}
+
+h2{
+
+	margin:12px;
+	padding:6px;
+	font-size:28px;
+	line-height: 50px;
+	color:#D8FF00;
+	font-family:gibson;
+	letter-spacing:4px;
+
+}
+
+.locale
+{
+	font-size:22px;
+	letter-spacing:3px;
+	font-family:gibson;
+	text-shadow: #111 10px;
+	color:#6C00FF
+}
+.conf{
+	color:#D8FF00;
+	letter-spacing:2px;
+}
+.mcs
+{
+margin:32px;
+font-size:25px;
+color:#6C00FF;
+font-family:gibson;
+
+}
+.mulher{
+	height:150px;
+	width:115px;
+	background: rgba(0,0,0,0.5);
+	position:absolute;
+	left:7px;
+	top:350px;
+}
